@@ -1,0 +1,100 @@
+path to dataset files: C:\Users\twolf\.cache\kagglehub\datasets\bhanupratapbiswas\superstore-sales\versions\1
+
+Dataset shape: (9800, 18)
+Columns: ['Row_ID', 'Order_ID', 'Order_Date', 'Ship_Date', 'Ship_Mode', 'Customer_ID', 'Customer_Name', 'Segment', 'Country', 'City', 'State', 'Postal_Code', 'Region', 'Product_ID', 'Category', 'Sub_Category', 'Product_Name', 'Sales']
+
+Data successfully loaded into arrays for processing!
+
+=== DATA CLEANING ANALYSIS ===
+
+Checking for negative values in numeric columns...
+
+Negative value check complete.
+Standardizing Order_Date...
+Standardizing Ship_Date...
+
+Updating data types...
+Before update:
+Row_ID                    int64
+Order_ID                 object
+Order_Date       datetime64[ns]
+Ship_Date        datetime64[ns]
+Ship_Mode                object
+Customer_ID              object
+Customer_Name            object
+Segment                  object
+Country                  object
+City                     object
+State                    object
+Postal_Code             float64
+Region                   object
+Product_ID               object
+Category                 object
+Sub_Category             object
+Product_Name             object
+Sales                   float64
+dtype: object
+Data types updated.
+
+Converted Order_Date to datetime type.
+
+Converted Postal_Code to string type.
+
+Converted Ship_Date to datetime type.
+
+After update:
+Row_ID                    int64
+Order_ID                 object
+Order_Date       datetime64[ns]
+Ship_Date        datetime64[ns]
+Ship_Mode                object
+Customer_ID              object
+Customer_Name            object
+Segment                  object
+Country                  object
+City                     object
+State                    object
+Postal_Code              object
+Region                   object
+Product_ID               object
+Category                 object
+Sub_Category             object
+Product_Name             object
+Sales                   float64
+dtype: object
+
+Number of duplicate rows: 0
+
+Missing values in each column:
+Series([], dtype: int64)
+No missing values detected.
+
+Detecting outliers in numeric columns...
+No outliers detected in column 'Row_ID'
+Outliers detected in column 'Sales': 123 rows
+Removing outliers from column 'Sales'...
+Outliers removed from column 'Sales'. New dataset shape: (9677, 18)
+
+Outlier detection complete.
+
+==================================================
+SAVING CLEANED DATASET
+==================================================
+✅ Cleaned dataset saved successfully!
+📁 File location: C:\Users\twolf\.cache\kagglehub\datasets\bhanupratapbiswas\superstore-sales\versions\1\superstore_dataset_cleaned.csv
+📊 Final dataset shape: (9677, 18)
+
+📋 DATA CLEANING SUMMARY:
+   • Negative values removed from numeric columns
+   • Date formats standardized to MM/DD/YYYY
+   • Data types optimized (dates, postal codes)
+   • Duplicate rows removed
+   • Missing values handled
+   • Outliers detected and removed
+
+🔍 FINAL QUALITY CHECK:
+   • Total missing values: 0
+   • Duplicate rows: 0
+   • Dataset ready for analysis: ✅ YES
+
+🎉 Data cleaning process completed!
