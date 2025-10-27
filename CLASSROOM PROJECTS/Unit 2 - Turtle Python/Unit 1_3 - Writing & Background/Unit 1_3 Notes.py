@@ -48,7 +48,7 @@ screen.bgcolor(255, 200, 150)
 timmy.write("Hello World")
 
 # In the write function we can specify the size and style
-timmy.write("Hello World", font=("Arial", 20, "normal") )
+timmy.write("Hello World", font=("Arial", 20, "normal"))
 
 """
 The font attribute
@@ -67,11 +67,11 @@ Font Style: A string for the style, such as "normal", "bold", or "italic".
 # Any shape drawn after this command will be filled
 timmy.begin_fill()
 
-# Set the fill color to blue
-timmy.fillcolor("blue")
-
 # Set the outline color to red
 timmy.color("red")
+
+# Set the fill color to blue
+timmy.fillcolor("blue")
 
 # Draw the first side of the square
 timmy.forward(100)

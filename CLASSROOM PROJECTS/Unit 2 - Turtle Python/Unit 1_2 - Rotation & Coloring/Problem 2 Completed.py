@@ -73,6 +73,7 @@ timmy_ext.pendown()
 timmy_ext.right(90)
 timmy_ext.color("teal")
 timmy_ext.forward(100)
+timmy_ext.hideturtle()
 
 turtle.done()
 turtle.bye()
