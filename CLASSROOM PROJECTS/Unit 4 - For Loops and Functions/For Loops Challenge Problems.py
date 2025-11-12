@@ -56,9 +56,10 @@ print(x)
 
 # Question 14
 def getChange(cost, paid):
+    pass
     # MISSING CODE #
 
-getChange(5.00, 2.00)
+getChange(2.00, 5.00)
 
 # Question 15
 def triplet(word):

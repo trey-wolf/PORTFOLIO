@@ -107,14 +107,12 @@ def calculate_circle_area(radius):
 
 # To use the returned value, we must store it in a variable.
 print("\n--- Circle Area Calculator ---")
-circle1_radius = 5
 # The value returned by the function is stored in circle1_area
-circle1_area = calculate_circle_area(circle1_radius)
-print(f"A circle with a radius of {circle1_radius} has an area of {circle1_area:.2f}.")
+circle1_area = calculate_circle_area(5)
+print(f"A circle with a radius of {5} has an area of {circle1_area:.2f}.")
 
-circle2_radius = 12
-circle2_area = calculate_circle_area(circle2_radius)
-print(f"A circle with a radius of {circle2_radius} has an area of {circle2_area:.2f}.")
+circle2_area = calculate_circle_area(12)
+print(f"A circle with a radius of {12} has an area of {circle2_area:.2f}.")
 
 # ---
 

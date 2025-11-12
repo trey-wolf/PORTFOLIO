@@ -55,6 +55,7 @@
 #    spot where the function was originally called and continues executing from the next line.
 
 # ---
+def name():
 
 # **Example 1: A Simple Welcome Message**
 
@@ -104,8 +105,8 @@ def roll_for_doubles():
 
 # 2. CALLING the function to play the game.
 # Each time we call it, a new set of random numbers will be generated.
-roll_for_doubles()
-roll_for_doubles()
+for i in range(10):
+    roll_for_doubles()
 
 # ---
 

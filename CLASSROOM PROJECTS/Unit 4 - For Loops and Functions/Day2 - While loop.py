@@ -72,21 +72,13 @@ print("First loop has finished!")
 
 print("\n--- Factorial Calculator (while loop version) ---")
 
-# Get a number from the user
-num_input = int(input("Enter a positive number to find its factorial: "))
 
-# A variable to store the final result
+num_input = 4
 factorial_result = 1
-
-# 1. Initialization
 current_number = 1
 
-# 2. Condition: Loop as long as the number we are multiplying by is less
-#    than or equal to the user's input number.
 while current_number <= num_input:
     factorial_result = factorial_result * current_number
-
-    # 3. Update: Move to the next number
     current_number = current_number + 1
 
 print(f"\nThe factorial of {num_input} is {factorial_result}.")

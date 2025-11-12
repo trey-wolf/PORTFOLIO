@@ -1,0 +1,68 @@
+Here is the content for a README file based on the Python script you provided.
+
+-----
+
+# Vending Machine Simulator
+
+This repository contains a simple, text-based vending machine simulator written in Python. It's a procedural program that allows users to interact with a virtual vending machine by inserting money, selecting items, and receiving change. It also includes a password-protected admin function for restocking items.
+
+-----
+
+## About This Program
+
+The script simulates the core functions of a vending machine.
+
+  * **View Items:** Displays a list of available items, including their price and current stock.
+  * **Insert Money:** Allows the user to add to their current balance.
+  * **Select Item:** Lets the user purchase an item. The program checks if the item is in stock and if the user has sufficient funds.
+  * **Dispense Change:** If a purchase is successful, the machine "dispenses" the item and returns any remaining change, setting the balance back to zero.
+  * **Admin Restock:** A password-protected option (`3`) allows an administrator to add stock to any item. (The default password is **`1234`**).
+  * **Quit:** Exits the program and returns any remaining balance to the user.
+
+-----
+
+## How to Run
+
+This program does not require any external libraries. You only need to have Python 3 installed on your system.
+
+1.  Make sure you have the `VendingMachineFinished.py` file on your computer.
+2.  Open your terminal (like Command Prompt, PowerShell, or Terminal).
+3.  Navigate to the directory where you saved the file.
+    ```bash
+    cd path/to/your/directory
+    ```
+4.  Run the script using the Python interpreter:
+    ```bash
+    python VendingMachineFinished.py
+    ```
+    *(Note: You may need to use `python3` instead of `python` depending on your system's configuration.)*
+
+-----
+
+## How to Use
+
+Once the program is running, you will see a menu with four options:
+
+### 1: Insert money
+
+  * Select this option to add funds to your balance.
+  * You will be prompted to enter a monetary amount (e.g., `5`, `1.50`).
+
+### 2: Select item
+
+  * Select this option to make a purchase.
+  * You will be prompted to enter the item number (e.g., `1` for Chips).
+  * If you have enough money and the item is in stock, the purchase will be successful. Your change will be displayed, and your balance will be reset to $0.
+  * If the item is out of stock or you don't have enough money, an error message will be shown, and you will be returned to the main menu.
+
+### 3: Restock items (Admin only)
+
+  * This option is for machine administrators.
+  * You will be prompted to enter a 4-digit admin password. The default password is **`1234`**.
+  * If the password is correct, you will see the item list again and be asked which item to restock.
+  * After selecting an item, you will be asked how many units to add.
+
+### 4: Quit
+
+  * This will stop the program.
+  * If you have any remaining balance, it will be "returned" to you with a final message.
